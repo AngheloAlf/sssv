@@ -119,8 +119,8 @@ void func_8037D32C_78E9DC(s32 arg0, u8 arg1, s32 arg2, u16 arg3, s32 arg4) {
 //     while (sp9A <= sp60) {
 //         sp98 = sp54;
 //         while (sp98 <= (sp9C + sp90)) {
-//             for (phi_s1 = &D_803DA110[(s16) (sp9A + (sp98 * 5))]; phi_s1 != NULL; phi_s1 = phi_s1->unk0) {
-//                 temp_v0_2 = phi_s1->unk8;
+//             for (phi_s1 = D_803DA110[(s16) (sp9A + (sp98 * 5))].next; phi_s1 != NULL; phi_s1 = phi_s1->next) {
+//                 temp_v0_2 = phi_s1->animal;
 //                 if (phi_s1 == temp_v0_2->unk11C) {
 //                     if ((D_803D5530 != temp_v0_2) &&
 //                         ((temp_v0_2->unk162 == 6) || (temp_v0_2->unk162 == 1))) {

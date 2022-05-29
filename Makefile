@@ -99,7 +99,7 @@ LOOP_UNROLL    =
 MIPSISET       = -mips2 -32
 
 INCLUDE_CFLAGS = -I . -I include -I include/2.0 -I include/2.0/PR -I include/libc -I assets \
-                 -I src.$(VERSION) -I src.$(VERSION)/libultra/os -I src.$(VERSION)/libultra/audio
+                 -I src.$(VERSION) -I src.$(VERSION)/libultra/audio
 
 ASFLAGS        = -EB -mtune=vr4300 -march=vr4300 -mabi=32 -I include
 OBJCOPYFLAGS   = -O binary
@@ -163,8 +163,10 @@ $(BUILD_DIR)/$(SRC_DIR)/core/string.c.o: OPT_FLAGS := -O2
 
 $(BUILD_DIR)/$(SRC_DIR)/overlay2_6AB090.c.o: LOOP_UNROLL := -Wo,-loopunroll,0
 
+# $(BUILD_DIR)/src.us/overlay1_6384F0.c.o: CC := $(TOOLS_DIR)/ido7.1_recomp/cc
+
 $(BUILD_DIR)/src.eu/overlay1%.c.o: OPT_FLAGS := -g
-# $(BUILD_DIR)/src.eu/overlay1%_63ED30.c.o: OPT_FLAGS := -g
+
 ### Targets
 
 default: all
