@@ -3631,7 +3631,6 @@ segments:
   - type: code
     name: overlay2 # sssv game code
     vram: 0x80294E50
-    symbol_name_format: MEOW_$VRAM
     start: 0x006A6500
     exclusive_ram_id: ovl_80
     subalign: 4 # for incomplete rodata
