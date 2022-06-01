@@ -344,7 +344,7 @@ segments:
     type: code
     vram: 0x01000000
     start: 0x398D0
-    overlay: ovl
+    exclusive_ram_id: ovl_01
     subalign: 8
     subsegments:
     - [0x398D0, bin] # CI4 textures
@@ -860,7 +860,7 @@ segments:
     vram: 0x05000000
     start: 0x7F790
     subalign: 8
-    overlay: ovl
+    exclusive_ram_id: ovl
     subsegments:
     - [0x7F790, sssv_vtx, data/inc/D_05000000_7F790]
     - [0x7F910, .data, data/D_5000180_7F910]
@@ -915,7 +915,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0x85790
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0x85790, rgba16, img/levels/HAVE_A_NICE_DAY/roof_tile.rgba16, 32, 32]
     - [0x85F90, rgba16, img/levels/HAVE_A_NICE_DAY/floorboard.rgba16, 32, 32]
@@ -936,7 +936,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0x87B80
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0x87B80, sssv_vtx, data/inc/D_05000000_87B80]
     - [0x87C00, sssv_vtx, data/inc/D_05000080_87C00]
@@ -961,7 +961,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0x89260
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0x89260, rgba16, img/intro/D_05000000_89260.rgba16, 32, 32]
     - [0x89A60, sssv_vtx, data/inc/D_05000800_89A60]
@@ -1040,7 +1040,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0x92BF0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0x92BF0, rgba16, img/levels/THE_BATTERY_FARM/roof_tile.D_05000000_92BF0.rgba16, 32, 32]
     - [0x933F0, rgba16, img/levels/THE_BATTERY_FARM/floorboard.D_05000800_933F0.rgba16, 32, 32]
@@ -1077,7 +1077,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0x96790
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0x96790, sssv_vtx, data/inc/D_05000000_96790]
     - [0x96970, sssv_vtx, data/inc/D_050001E0_96970]
@@ -1088,7 +1088,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0x97020
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subalign: 8
     subsegments:
     - [0x97020, .data, data/DMA_INTRO_D.D_05000880_978A0]
@@ -1149,7 +1149,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0x9E0D0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0x9E0D0, sssv_vtx, data/inc/D_05000000_9E0D0]
     - [0x9E150, sssv_vtx, data/inc/D_05000080_9E150]
@@ -1167,7 +1167,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0x9ED10
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0x9ED10, .data, data/D_05000530_9F240]
     - [0x9ED10, sssv_vtx, data/inc/D_05000000_9ED10]
@@ -1203,7 +1203,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xA0E40
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xA0E40, sssv_vtx, data/inc/D_05000000_A0E40]
     - [0xA0EC0, sssv_vtx, data/inc/D_05000080_A0EC0]
@@ -1212,14 +1212,14 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xA10C0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xA10C0, .rodata, data/D_05000000_A10C0]
   - name: BIG_CELEBRATION_PARADE # tbd
     type: code
     vram: 0x05000000
     start: 0xA10D0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xA10D0, sssv_vtx, data/inc/D_05000000_A10D0]
     - [0xA1150, sssv_vtx, data/inc/D_05000080_A1150]
@@ -1297,7 +1297,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xAA940
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xAA940, sssv_vtx, data/inc/D_05000000_AA940]
     - [0xAAB30, sssv_vtx, data/inc/D_050001F0_AAB30]
@@ -1362,7 +1362,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xB0490
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB0490, sssv_vtx, data/inc/D_05000000_B0490]
     - [0xB04C0, sssv_vtx, data/inc/D_05000030_B04C0]
@@ -1373,7 +1373,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xB0B90
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB0B90, sssv_vtx, data/inc/D_05000000_B0B90]
     - [0xB0D90, sssv_vtx, data/inc/D_05000200_B0D90]
@@ -1399,7 +1399,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xB2ED0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB2ED0, sssv_vtx, data/inc/D_05000000_B2ED0]
     - [0xB30C0, sssv_vtx, data/inc/D_050001F0_B30C0]
@@ -1421,49 +1421,49 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xB3D70
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB3D70, .rodata, data/D_05000000_B3D70]
   - name: data_B3D80
     type: code
     vram: 0x05000000
     start: 0xB3D80
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB3D80, .rodata, data/D_05000000_B3D80]
   - name: data_B3D90
     type: code
     vram: 0x05000000
     start: 0xB3D90
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB3D90, .rodata, data/D_05000000_B3D90]
   - name: data_B3DA0
     type: code
     vram: 0x05000000
     start: 0xB3DA0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB3DA0, .rodata, data/D_05000000_B3DA0]
   - name: data_B3DB0
     type: code
     vram: 0x05000000
     start: 0xB3DB0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB3DB0, .rodata, data/D_05000000_B3DB0]
   - name: data_B3DC0
     type: code
     vram: 0x05000000
     start: 0xB3DC0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB3DC0, .rodata, data/D_05000000_B3DC0]
   - name: WEIGHT_FOR_IT
     type: code
     vram: 0x05000000
     start: 0xB3DD0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB3DD0, sssv_vtx, data/inc/D_05000000_B3DD0]
     - [0xB3FD0, sssv_vtx, data/inc/D_05000200_B3FD0]
@@ -1472,14 +1472,14 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xB40C0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB40C0, .rodata, data/D_05000000_B40C0]
   - name: JUNGLE_JUMPS # ?
     type: code
     vram: 0x05000000
     start: 0xB40D0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB40D0, sssv_vtx, data/inc/D_05000000_B40D0]
     - [0xB4150, sssv_vtx, data/inc/D_05000080_B4150]
@@ -1488,7 +1488,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xB43A0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB43A0, sssv_vtx, data/inc/D_05000000_B43A0]
     - [0xB4590, sssv_vtx, data/inc/D_050001F0_B4590]
@@ -1498,14 +1498,14 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xB48C0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB48C0, .rodata, data/D_05000000_B48C0]
   - name: EVOS_ESCAPE
     type: code
     vram: 0x05000000
     start: 0xB48D0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xB48D0, sssv_vtx, data/inc/D_05000000_B48D0]
     - [0xB4930, sssv_vtx, data/inc/D_05000060_B4930]
@@ -1583,35 +1583,35 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xBD090
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xBD090, .rodata, data/D_05000000_BD090]
   - name: data_BD0A0
     type: code
     vram: 0x05000000
     start: 0xBD0A0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xBD0A0, .rodata, data/D_05000000_BD0A0]
   - name: data_BD0B0
     type: code
     vram: 0x05000000
     start: 0xBD0B0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xBD0B0, .rodata, data/D_05000000_BD0B0]
   - name: data_BD0C0
     type: code
     vram: 0x05000000
     start: 0xBD0C0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xBD0C0, .rodata, data/D_05000000_BD0C0]
   - name: data_BD0D0
     type: code
     vram: 0x05000000
     start: 0xBD0D0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subalign: 8
     subsegments:
     - [0xBD0D0, sssv_vtx, data/inc/D_05000000_BD0D0]
@@ -1622,7 +1622,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xBD2B0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xBD2B0, sssv_vtx, data/inc/D_05000000_BD2B0]
     - [0xBD420, sssv_vtx, data/inc/D_05000170_BD420]
@@ -1654,7 +1654,7 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xBFC40
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xBFC40, sssv_vtx, data/inc/D_05000000_BFC40]
     - [0xBFE40, sssv_vtx, data/inc/D_05000200_BFE40]
@@ -1698,14 +1698,14 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xC4500
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xC4500, .rodata, data/D_05000000_C4500]
   - name: data_C4510
     type: code
     vram: 0x05000000
     start: 0xC4510
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xC4510, sssv_vtx, data/inc/D_05000000_C4510]
     - [0xC4590, sssv_vtx, data/inc/D_05000080_C4590]
@@ -1714,14 +1714,14 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xC47A0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xC47A0, .rodata, data/D_05000000_C47A0]
   - name: data_C47B0
     type: code
     vram: 0x05000000
     start: 0xC47B0
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subalign: 8
     subsegments:
     - [0xC47B0, sssv_vtx, data/inc/D_05000000_C47B0]
@@ -1759,28 +1759,28 @@ segments:
     type: code
     vram: 0x05000000
     start: 0xC7A00
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xC7A00, .rodata, data/D_05000000_C7A00]
   - name: data_C7A10
     type: code
     vram: 0x05000000
     start: 0xC7A10
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xC7A10, .rodata, data/D_05000000_C7A10]
   - name: data_C7A20
     type: code
     vram: 0x05000000
     start: 0xC7A20
-    overlay: ovl
+    exclusive_ram_id: ovl_05
     subsegments:
     - [0xC7A20, .rodata, data/D_05000000_C7A20]
   - name: europe_biome
     type: code
     vram: 0x04000000
     start: 0xC7A30
-    overlay: ovl
+    exclusive_ram_id: ovl_04
     subalign: 8
     subsegments:
     - [0xC7A30, sssv_vtx, data/inc/D_04000000_C7A30]
@@ -2103,7 +2103,7 @@ segments:
     type: code
     vram: 0x04000000
     start: 0xDD5C0
-    overlay: ovl
+    exclusive_ram_id: ovl_04
     subalign: 8
     subsegments:
     - [0xDD5C0, sssv_vtx, data/inc/D_04000000_DD5C0]
@@ -2334,7 +2334,7 @@ segments:
     type: code
     vram: 0x04000000
     start: 0xE75B0
-    overlay: ovl
+    exclusive_ram_id: ovl_04
     subalign: 8
     subsegments:
     - [0xE75B0, sssv_vtx, data/inc/D_04000000_E75B0]
@@ -2529,7 +2529,7 @@ segments:
     type: code
     vram: 0x04000000
     start: 0xF1060
-    overlay: ovl
+    exclusive_ram_id: ovl_04
     subalign: 8
     subsegments:
     - [0xF1060, sssv_vtx, data/inc/D_04000000_F1060]
@@ -2803,7 +2803,7 @@ segments:
     type: code
     vram: 0x04000000
     start: 0xFFD50
-    overlay: ovl
+    exclusive_ram_id: ovl_04
     subalign: 8
     subsegments:
     - [0x0FFD50, sssv_vtx, data/inc/D_04000000_FFD50]
@@ -3100,7 +3100,7 @@ segments:
     type: code
     vram: 0x04000000
     start: 0x116BD0
-    overlay: ovl
+    exclusive_ram_id: ovl_04
     subalign: 8
     subsegments:
     - [0x116BD0, rnc, img/menu/powercell, rgba16, 32, 32]
@@ -3518,9 +3518,9 @@ segments:
   - [0x637160, bin, rnc_637160] # 5000 => 115024 # 28 * 0x100C particles?
   - type:  code
     name:  overlay1
-    overlay: ovl
+    vram: 0x80294E50
     start: 0x006384F0
-    vram:  0x80294E50
+    exclusive_ram_id: ovl_80
     subalign: 8
     subsegments:
     - [0x6384F0, c, overlay1_6384F0]
@@ -3630,9 +3630,10 @@ segments:
     - [0x6A6500, .bss, overlay1_63C660]
   - type: code
     name: overlay2 # sssv game code
-    overlay: ovl
+    vram: 0x80294E50
+    symbol_name_format: MEOW_$VRAM
     start: 0x006A6500
-    vram:  0x80294E50
+    exclusive_ram_id: ovl_80
     subalign: 4 # for incomplete rodata
     subsegments:
     - [0x6A6500, c, overlay2_6A6500]
