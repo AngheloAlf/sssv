@@ -17,6 +17,7 @@ options:
   migrate_rodata_to_functions: no
   # workaround regex issue
   create_undefined_funcs_auto: no
+  symbol_name_format: $VRAM_$ROM
 segments:
   - name:  header
     type:  header
@@ -28,6 +29,7 @@ segments:
     type:  code
     start: 0x00001000
     vram:  0x80125900
+    symbol_name_format: $VRAM
     subalign: 8
     subsegments:
     - [0x1000, asm, entrypoint]                     # handwritten
